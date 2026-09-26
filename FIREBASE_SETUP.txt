@@ -1,0 +1,27 @@
+PICKLEQUEUE v10 — FIREBASE CONNECTED
+
+This build is already configured for the Firebase project PickleQueue Live.
+
+Configured features:
+- Anonymous Authentication for the host
+- Firebase Realtime Database live synchronization
+- Live spectator QR code and link
+- Spectators are view-only
+- Live courts, waiting queue, next match, previous match, and ranking
+
+Firebase Realtime Database security rules should remain:
+
+{
+  "rules": {
+    "liveSessions": {
+      "$sessionId": {
+        ".read": true,
+        ".write": "auth != null && ((!data.exists() && newData.child('owner').val() === auth.uid) || data.child('owner').val() === auth.uid)"
+      }
+    }
+  }
+}
+
+GitHub Pages deployment:
+Upload/replace app.js, index.html, manifest.json, style.css, and sw.js.
+After deployment, hard-refresh the host app. Open Live Share and choose Start Live Sharing.

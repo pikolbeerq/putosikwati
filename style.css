@@ -1,0 +1,231 @@
+:root{font-family:Inter,system-ui,-apple-system,sans-serif;color:#f3f7f5;background:#061119;--panel:#0b1b25;--card:#0d202b;--line:#29404c;--muted:#9eb0ba;--green:#55f277;--blue:#1598ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#102431,#061119 42%);min-height:100vh}.app{max-width:520px;margin:auto;padding:18px 16px 90px}header{display:flex;justify-content:space-between;align-items:center;padding:8px 2px 14px}.brand{display:flex;align-items:center;gap:10px}.ball{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#082314;font-size:23px;box-shadow:0 0 20px #55f27733}h1,h2,p{margin:0}h1{font-size:26px;letter-spacing:-.5px}.brand p{font-size:10px;letter-spacing:1.6px;color:#c5d0d5}.gear{font-size:24px;background:#132b38;border-radius:50%;padding:8px}.session,.card,.preview{background:linear-gradient(145deg,#0c1d27,#091821);border:1px solid var(--line);border-radius:18px}.session{padding:15px}.sessiontop{display:flex;justify-content:space-between;gap:10px}.sessiontop>div>small{color:#62f59a}.session h2{font-size:20px;margin:4px 0}.session p,small,#notice{color:var(--muted)}.live{background:#55f277;color:#082314;font-weight:900;font-size:11px;border-radius:999px;padding:5px 13px;height:max-content}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:14px}.stats div{background:#102631;border:1px solid #203b48;border-radius:13px;padding:10px 4px;text-align:center}.stats b,.stats small{display:block}.stats b{font-size:20px}.stats small{font-size:10px}nav{position:sticky;bottom:0;z-index:8;display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:12px 0;background:#081721;border:1px solid var(--line);padding:7px;border-radius:16px}button,input{font:inherit;min-height:46px;border-radius:12px;padding:10px 13px}button{border:0;background:linear-gradient(180deg,#5cf67c,#2ddd5b);color:#071b10;font-weight:800;cursor:pointer}.tab{background:transparent;color:#9dafb8;display:flex;flex-direction:column;align-items:center;font-size:17px}.tab span{font-size:11px;margin-top:2px}.tab.active{color:var(--green);background:#102630}.secondary{background:#10212b;color:#eef5f2;border:1px solid #3a5360}.smart{font-size:17px}.smart small{display:block;color:#163a20;font-size:10px}#notice{min-height:22px;font-size:12px;margin:6px 2px}#join{display:flex;gap:8px;margin:8px 0 12px}#join input{min-width:0;flex:1;background:#0d202b;color:white;border:1px solid var(--line);font-size:16px}.actions{display:grid;grid-template-columns:1.2fr 1fr;gap:8px}.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:18px 0 10px}.bar h2{font-size:18px}.player{background:#0b1b25;border:1px solid #29404c;border-radius:15px;padding:11px;margin:7px 0;display:flex;align-items:center;gap:10px}.pos{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:#203542;color:white;font-weight:800}.grow{flex:1;min-width:0}.grow b{display:block;overflow:hidden;text-overflow:ellipsis}.grow small{font-size:11px}.remove{background:transparent;color:#9fb0b9;padding:5px;min-height:40px}.card{padding:14px;margin:10px 0}.courtHead{display:flex;justify-content:space-between}.courtHead small{color:#55f277}.teams{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.team{border:1px solid #235168;background:#0a1a23;border-radius:13px;padding:11px}.team:first-child{border-color:#1c8743}.team p{margin-top:5px;line-height:1.55}.team button{width:100%;margin-top:10px}.preview{padding:14px;margin:14px 0}.preview b,.preview small{display:block}.preview small{margin-top:4px}.tablewrap{overflow-x:auto;background:#0b1b25;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;min-width:390px}th,td{padding:11px 8px;border-bottom:1px solid #213844;text-align:center}th{color:#a9b8c0;font-size:11px}th:nth-child(2),td:nth-child(2){text-align:left}.endbtn{width:100%;margin-top:18px;background:linear-gradient(180deg,#ff4e5b,#e72e3b);color:white;font-size:16px}.endhint{display:block;text-align:center;margin-top:7px;font-size:11px}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#061119;z-index:50;overflow:auto;padding:18px 12px}.modalbox{width:min(520px,100%);margin:auto}.finalhead{display:flex;align-items:center;gap:12px;margin:8px 0 20px}.back{background:transparent;color:white;font-size:34px;padding:0;min-height:40px}.podium{display:flex;align-items:flex-end;justify-content:center;gap:7px;margin:20px 0}.pod{width:30%;text-align:center;border:1px solid var(--line);border-radius:15px 15px 6px 6px;padding:12px 5px;background:#10232d}.pod.one{min-height:155px;background:linear-gradient(#614f0a,#bd8b0c)}.pod.two{min-height:125px}.pod.three{min-height:105px;background:linear-gradient(#4d2d1f,#74402a)}.pod .medal{font-size:28px}.pod b,.pod small{display:block}.quote{text-align:center;background:#0c1d27;border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:14px;color:#dce7e2;font-style:italic}.full{width:100%;margin-top:12px}@media(max-width:360px){.bar{align-items:flex-start;flex-direction:column}.bar button{width:100%}.actions{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+
+
+/* Previous match cards */
+.homePrevious{margin-top:14px}.courtBlock{margin-bottom:14px}.courtBlock>.card{margin-bottom:8px}.previous{border:1px solid #183b4b;background:linear-gradient(180deg,#0b1b25,#09161e);border-radius:16px;padding:13px;margin-top:8px}.previous.empty{opacity:.72}.previousHead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.previousHead b{font-size:14px}.previousHead small{color:#8da8b6;font-size:11px}.previousTeams{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}.previousTeams>div{min-width:0}.previousTeams>div:last-child{text-align:right}.previousTeams small{display:block;color:#7f9aa8;font-size:10px;margin-bottom:3px}.previousTeams b{font-size:13px;line-height:1.45}.previousVs{font-size:11px;color:#698492;font-weight:800}.winnerPill{width:max-content;max-width:100%;margin:10px auto 0;background:#0b2f5b;color:#7dc7ff;border:1px solid #1d78c1;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800}
+
+/* v5: single-player replacement + result correction */
+.courtPlayer{display:flex;align-items:center;justify-content:space-between;gap:7px;margin:7px 0;padding:7px 8px;background:#0d222d;border:1px solid #203f4e;border-radius:10px}.courtPlayer b{font-size:13px;min-width:0;overflow:hidden;text-overflow:ellipsis}.replaceOne{min-height:34px;padding:5px 8px;border-radius:8px;background:#102c39;color:#dff8ff;border:1px solid #3a7087;font-size:10px;white-space:nowrap}.swapWinner{display:block;width:100%;margin-top:10px;min-height:40px;background:#0b2632;color:#eafaff;border:1px solid #35b9ee}.swapHint{display:block;text-align:center;font-size:9px;margin-top:5px;color:#7f9aa8}
+
+
+/* v6: next match preview */
+.nextMatch{margin:14px 0;border:1px solid #2e728c;background:linear-gradient(145deg,#0c202b,#081821);border-radius:17px;padding:14px;box-shadow:0 0 22px #1598ff0d}.nextMatch.empty{opacity:.78}.nextHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px}.nextHead>div small{display:block;color:#55f277;font-size:9px;font-weight:900;letter-spacing:1.3px}.nextHead b{display:block;font-size:17px;margin-top:2px}.nextHead>span{font-size:9px;font-weight:900;color:#77d7ff;background:#0c3142;border:1px solid #23637d;padding:5px 8px;border-radius:999px}.nextMatch>p{font-size:12px;color:#9eb0ba;margin:0}.nextTeams{display:grid;grid-template-columns:1fr auto 1fr;gap:9px;align-items:stretch}.nextTeam{border:1px solid #2c5364;border-radius:12px;padding:10px;background:#0b1a23}.nextTeam.a{border-color:#1d8c49}.nextTeam.b{border-color:#177dcc}.nextTeam small{display:block;font-size:9px;margin-bottom:6px}.nextTeam b{display:block;font-size:13px;line-height:1.65}.nextTeam.b{text-align:right}.nextVs{display:grid;place-items:center;font-size:11px;font-weight:900;color:#77909c}.nextReason{margin-top:10px;padding:8px 9px;border-radius:10px;background:#0c2a22;color:#66ee92;font-size:10px;text-align:center}.nextHint{display:block;text-align:center;margin-top:7px;font-size:9px;color:#77909c}
+/* v7: saved sessions + QR sharing */
+nav{grid-template-columns:repeat(4,1fr)}
+.sessionSaved{border:1px solid var(--line);background:linear-gradient(145deg,#0c1d27,#091821);border-radius:16px;padding:14px;margin:10px 0}.sessionSavedHead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.sessionSavedHead b{display:block}.sessionSavedHead small{font-size:10px}.sessionSavedStats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:12px 0}.sessionSavedStats div{background:#102631;border-radius:10px;padding:8px;text-align:center}.sessionSavedStats b,.sessionSavedStats small{display:block}.sessionSavedActions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sessionSavedActions button{min-height:40px;padding:7px;font-size:11px}.shareBox{margin-top:14px;border:1px solid #2e728c;background:#0b1b25;border-radius:16px;padding:15px;text-align:center}.shareBox h3{margin:0 0 4px}.shareBox p{font-size:11px;color:var(--muted);margin:0 0 12px}.shareBox img{display:block;width:min(260px,80vw);height:auto;aspect-ratio:1;background:white;border-radius:12px;padding:8px;margin:0 auto 12px}.savedBadge{display:inline-block;background:#123c2a;color:#66ee92;border:1px solid #1b6b45;border-radius:999px;padding:4px 8px;font-size:9px;font-weight:900}.deleteSession{background:#32151a;color:#ff8e98;border:1px solid #6b2831}.sessionTable{margin-top:12px}.shareNote{font-size:10px;color:#7f9aa8;text-align:center;margin-top:8px}
+
+/* v8: strict view-only shared sessions */
+.shared-view{background:#061119}.shared-view>.app,.shared-view>#finalModal{display:none!important}.shared-view #sessionModal{display:block!important;background:radial-gradient(circle at top,#102431,#061119 42%)}.shared-view #sessionModal .modalbox:before{content:"VIEW ONLY • SHARED SESSION";display:block;width:max-content;max-width:100%;margin:4px auto 14px;padding:6px 11px;border-radius:999px;background:#123c2a;color:#66ee92;border:1px solid #1b6b45;font-size:10px;font-weight:900;letter-spacing:.8px}.sharedMatches{margin-top:16px;border:1px solid var(--line);border-radius:16px;background:#0b1b25;padding:13px}.sharedMatches h3{margin:0 0 9px}.sharedMatchRow{padding:10px 0;border-top:1px solid #213844}.sharedMatchRow:first-of-type{border-top:0}.sharedMatchRow>div:first-child{display:flex;justify-content:space-between;gap:8px}.sharedMatchRow small{font-size:10px}.sharedSides{display:grid;grid-template-columns:1fr auto 1fr;gap:7px;align-items:center;margin-top:7px;font-size:10px}.sharedSides span:last-child{text-align:right}.sharedSides b{color:#66ee92;font-size:9px;text-align:center}.shareError{border:1px solid #6b2831;background:#32151a;color:#ffb0b7;border-radius:14px;padding:16px;text-align:center}.shared-view #sessionRanking button,.shared-view #sessionRanking input{display:none!important}
+
+.liveTools{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.liveShareBtn{font-size:12px;padding:8px 10px;border-radius:10px}.liveSharePanel{text-align:center}.liveSharePanel img{display:block;width:min(260px,80%);margin:18px auto;background:white;padding:10px;border-radius:18px}.liveUrl{font-size:11px;word-break:break-all;padding:10px;border:1px solid var(--line,#23343d);border-radius:10px;margin:10px 0;color:#9eb0b8}.danger{background:#6e2430!important;color:white!important}.liveViewer{max-width:430px;margin:auto;padding:16px;color:#eef7f4}.viewerApp{display:block}.viewerCard{background:#0e2029;border:1px solid #243943;border-radius:18px;padding:15px;margin:12px 0}.viewerTeams{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;text-align:center;margin-top:12px}.viewerTeams small,.viewerTeams b{display:block}.viewerUpdated{text-align:center;color:#8ca1aa;font-size:12px;margin:10px 0 18px}.viewerLock,.viewerEnded,.viewerError{margin:18px 0;padding:14px;border:1px solid #28434d;border-radius:14px;background:#0d1c24;text-align:center;color:#a9bbc2}.viewerEnded{border-color:#745d28;color:#f0cf78}.viewerError{border-color:#71313b;color:#ff9cac}body.shared-view .liveViewer button{display:none!important}
+
+/* V10.5: dedicated live spectator mode; do not trigger saved-session modal */
+.live-view{background:#061119}
+.live-view>.app,.live-view>#finalModal,.live-view>#sessionModal,.live-view>#liveModal{display:none!important}
+.live-view>#liveViewer{display:block!important}
+
+
+/* V10.6: organized two-court layout + one unified previous match */
+.courtsGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.courtsGrid .courtBlock{margin:0;min-width:0}
+.courtsGrid .courtCard{height:100%;margin:0}
+.courtsGrid .teams{grid-template-columns:1fr;gap:8px}
+.courtsGrid .team{min-width:0}
+.courtsGrid .team button{font-size:11px;padding:8px}
+.courtsGrid .courtPlayer{padding:6px}
+.courtsGrid .courtPlayer b{font-size:12px}
+.courtsPrevious{margin:14px 0 4px}
+.courtsPrevious .previous{margin-top:0}
+.viewerCourtsGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.viewerCourtsGrid .viewerCard{margin:0;min-width:0;height:100%}
+.viewerCourtsGrid .viewerTeams{grid-template-columns:1fr;gap:8px}
+.viewerCourtsGrid .viewerTeams>span{font-size:10px;color:#77909c;font-weight:900}
+.viewerSectionHead{margin-bottom:10px}
+@media(max-width:420px){
+  .courtsGrid{gap:8px}
+  .courtsGrid .card{padding:10px}
+  .courtsGrid .courtHead b{font-size:14px}
+  .courtsGrid .courtHead small{font-size:9px}
+  .courtsGrid .replaceOne{font-size:9px;padding:4px 6px}
+  .viewerCourtsGrid{gap:8px}
+  .viewerCourtsGrid .viewerCard{padding:10px}
+  .viewerCourtsGrid .viewerTeams b{font-size:12px}
+}
+
+
+/* V10.7: Picklebeer branding + match-flow refinement */
+.brand>div{min-width:0}
+.brand h1{line-height:1.05}
+.brand .clubName{margin-top:4px;color:var(--green);font-size:10px;font-weight:900;letter-spacing:1.7px}
+.brand .clubTagline{display:block;margin-top:2px;color:#8fa4ae;font-size:8px;font-weight:700;letter-spacing:1.15px}
+.picklebeerMark{position:relative;width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#61f57f,#25c958);box-shadow:0 0 22px #55f27730;transform:rotate(-5deg)}
+.pbPaddle{width:25px;height:32px;border:3px solid #082314;border-radius:13px 13px 10px 10px;display:grid;place-items:center;color:#082314;font-size:13px;font-weight:1000;line-height:1}
+.pbPaddle:after{content:'';position:absolute;width:8px;height:13px;background:#082314;border-radius:0 0 5px 5px;bottom:2px;left:20px}
+.pbBall{position:absolute;right:-4px;top:3px;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:#f3f7f5;color:#0b3720;font-size:6px;font-weight:1000;letter-spacing:-1px;border:2px solid #0b3720;transform:rotate(5deg)}
+#nextMatchCourts{margin-top:12px}
+#nextMatchCourts .nextMatch{margin-top:0}
+@media(max-width:360px){.picklebeerMark{width:44px;height:44px;flex-basis:44px}.brand h1{font-size:24px}.brand .clubName{font-size:9px}.brand .clubTagline{font-size:7px}}
+
+
+/* V10.8 — Picklebeer Club dashboard redesign. Functional logic unchanged. */
+:root{--lime:#d9ff16;--green:#55f277;--deep:#061119;--panel2:#081a1f;--gold:#ffd43b}
+body{background:radial-gradient(circle at 18% 0,#123522 0,#07171b 27%,#041016 65%);}
+.app{max-width:1180px;padding:18px 22px 90px}
+header{padding:4px 4px 14px;border-bottom:1px solid #1b523b;margin-bottom:14px}
+.brand{gap:14px}.picklebeerLogo{width:86px;height:86px;object-fit:contain;filter:drop-shadow(0 5px 14px #0008);flex:0 0 auto}
+.brand h1{font-size:42px;font-weight:950;font-style:italic;letter-spacing:-1.8px}.brand h1 span{color:var(--lime)}
+.brand .clubName{color:#fff;font-size:13px;letter-spacing:5px;font-weight:900;margin-top:2px}
+.brand .clubTagline{font-size:9px;color:#e7f0e9;letter-spacing:2px;margin-top:5px}
+.gear{border:1px solid #275a44;background:#0b211e}
+.session{border-color:#1e6c48;background:linear-gradient(120deg,#0b2420,#07171c);box-shadow:0 12px 40px #0004}
+.live{background:linear-gradient(180deg,#72ff91,#37d95b);box-shadow:0 0 16px #55f27744}
+nav{position:static;grid-template-columns:repeat(4,1fr);border-color:#21573f;background:#071a1b}
+.tab.active{background:#103629;color:#7cff91}
+.page[data-page="courts"] .bar:first-child{margin-top:12px}
+.courtsGrid{gap:14px}.courtCard{border:2px solid #3ae46d;background:linear-gradient(150deg,#0c2622,#07181b);box-shadow:0 0 24px #42ef6b18}
+.courtHead{align-items:center;padding-bottom:8px;border-bottom:1px solid #1d6545}.courtHead b{font-size:22px;font-style:italic;color:#72f78e;text-transform:uppercase}.courtHead small{background:var(--lime);color:#101800;border-radius:7px;padding:5px 10px;font-weight:950}
+.courtsGrid .teams{grid-template-columns:1fr 1fr;gap:10px}.team{background:#081a1d;border-color:#246748}.team small{font-weight:900;color:#62f59a}.team button{background:linear-gradient(180deg,#35e768,#17a943);color:#fff}
+#nextMatchCourts .nextMatch{border-color:#286d58;background:linear-gradient(145deg,#0b2323,#07171b)}
+.nextHead>div small{color:#fff}.nextHead>span{background:var(--lime);border:0;color:#111900}.nextReason{background:#102b20}
+.courtsPrevious .previous{border-color:#726b25;background:linear-gradient(145deg,#1a2012,#0a1819)}
+.preview{border-color:#275843;background:#0a1b1b}
+.tablewrap{border-color:#275843}.tablewrap thead{background:#0f2a22}
+.viewerApp{max-width:1180px}.viewerCourtsGrid{gap:14px}.viewerCard{border-color:#286b50}.viewerCourtsGrid .viewerCard{border:2px solid #39df69;background:linear-gradient(150deg,#0b2520,#07171b)}
+.viewerCourtsGrid .courtHead b{font-size:21px}.viewerTeams>span{color:var(--lime);font-size:16px;font-weight:950}
+.viewerLock{border-color:#286b50}
+@media(min-width:900px){
+ .session{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:18px}.session .stats{margin-top:0}
+ .page[data-page="queue"]{max-width:860px;margin:auto}
+ .page[data-page="records"],.page[data-page="history"]{max-width:980px;margin:auto}
+ #nextMatchCourts .nextMatch{padding:18px}.nextTeams{grid-template-columns:1fr 70px 1fr}.nextTeam b{font-size:16px}
+ .courtsPrevious .previous{padding:18px}
+}
+@media(max-width:700px){
+ .app{padding:14px 14px 85px}.picklebeerLogo{width:64px;height:64px}.brand{gap:9px}.brand h1{font-size:30px}.brand .clubName{font-size:9px;letter-spacing:3px}.brand .clubTagline{font-size:7px;letter-spacing:1px}
+ .courtsGrid{grid-template-columns:1fr 1fr;gap:8px}.courtsGrid .card{padding:9px}.courtHead b{font-size:15px}.courtHead small{font-size:8px;padding:4px 6px}.courtsGrid .teams{grid-template-columns:1fr;gap:7px}
+ nav{position:sticky}.viewerCourtsGrid{grid-template-columns:1fr 1fr;gap:8px}.viewerCourtsGrid .viewerCard{padding:10px}.viewerCourtsGrid .courtHead b{font-size:15px}.viewerTeams{grid-template-columns:1fr;gap:6px;text-align:center}.viewerTeams>span{font-size:11px}
+}
+@media(max-width:390px){.picklebeerLogo{width:56px;height:56px}.brand h1{font-size:27px}.brand .clubTagline{display:none}}
+
+/* V10.9: blue winner result */
+.viewerCard .viewerTeams>b{background:#0b2f5b;color:#7dc7ff;border:1px solid #1d78c1;border-radius:999px;padding:6px 10px;}
+
+/* V10.10 — Picklebeer arena background + compact player controls */
+body{
+  background:
+    radial-gradient(circle at 8% 18%,rgba(89,255,111,.16) 0 2px,transparent 3px),
+    radial-gradient(circle at 93% 24%,rgba(217,255,22,.12) 0 3px,transparent 4px),
+    linear-gradient(115deg,rgba(27,103,51,.26),transparent 23%),
+    linear-gradient(245deg,rgba(22,119,55,.18),transparent 25%),
+    radial-gradient(circle at 50% -10%,#123b28 0,#071b1c 31%,#031015 68%,#020b0f 100%);
+  background-attachment:fixed;
+}
+body:before,body:after{content:"";position:fixed;pointer-events:none;z-index:-1;opacity:.34;filter:drop-shadow(0 0 20px rgba(85,242,119,.15))}
+body:before{left:-95px;bottom:-75px;width:330px;height:330px;border:3px solid rgba(93,239,112,.28);border-radius:50%;box-shadow:inset 0 0 0 38px rgba(43,128,59,.05),0 0 0 18px rgba(217,255,22,.025)}
+body:after{right:-120px;top:180px;width:330px;height:520px;border:2px solid rgba(93,239,112,.16);border-radius:48% 52% 42% 58%;transform:rotate(18deg);background:repeating-linear-gradient(45deg,transparent 0 22px,rgba(85,242,119,.025) 23px 24px)}
+.app,.viewerApp{position:relative;z-index:1}
+.app:before{content:"PLAY HARD   •   HAVE FUN   •   GOOD VIBES";position:fixed;left:18px;top:52%;transform:rotate(-90deg) translateX(-50%);transform-origin:left top;color:rgba(100,255,125,.16);font-weight:950;font-style:italic;letter-spacing:3px;font-size:15px;pointer-events:none;z-index:-1}
+.app:after{content:"DINK  •  ROTATE  •  REPEAT";position:fixed;right:-62px;bottom:145px;transform:rotate(-90deg);color:rgba(217,255,22,.13);font-weight:950;font-style:italic;letter-spacing:3px;font-size:14px;pointer-events:none;z-index:-1}
+header,.session,nav,.courtCard,.previous,.nextMatch,.preview,.tablewrap,.viewerCard,.viewerLock{backdrop-filter:blur(8px)}
+
+/* Keep player names readable: the Replace action is deliberately compact. */
+.courtsGrid .courtPlayer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;align-items:center;padding:7px 8px}
+.courtsGrid .courtPlayer b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;min-width:0}
+.courtsGrid .replaceOne{min-height:26px;width:auto;padding:3px 7px;font-size:9px;line-height:1;border-radius:7px;justify-self:end}
+
+/* Winner actions: blue so they are visually distinct from assignment/replacement controls. */
+.courtsGrid .team>button[data-win]{background:linear-gradient(180deg,#249fff,#0874d4);border:1px solid #54b7ff;color:#fff;box-shadow:0 5px 16px rgba(0,119,220,.22)}
+.winnerPill{background:#0b2f5b!important;color:#8bd0ff!important;border:1px solid #238bd7!important}
+
+@media(max-width:700px){
+ body:before,body:after,.app:before,.app:after{opacity:.16}
+ .courtsGrid .courtPlayer{padding:6px}
+ .courtsGrid .courtPlayer b{font-size:11px}
+ .courtsGrid .replaceOne{font-size:8px;padding:3px 5px;min-height:24px}
+}
+
+
+/* V10.11 — visible Picklebeer arena branding */
+html{background:#020b0f}
+body{position:relative;isolation:isolate;overflow-x:hidden}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;opacity:1;
+  background:
+    linear-gradient(rgba(2,11,15,.83),rgba(2,11,15,.90)),
+    url('./icons/picklebeer-logo.png') left -105px top 120px/390px auto no-repeat,
+    url('./icons/picklebeer-logo.png') right -125px bottom 35px/420px auto no-repeat,
+    radial-gradient(circle at 12% 22%,rgba(68,255,101,.32),transparent 29%),
+    radial-gradient(circle at 88% 62%,rgba(193,255,0,.20),transparent 28%),
+    linear-gradient(135deg,#07301e 0%,#031318 42%,#020b0f 100%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.55;
+  background-image:
+    linear-gradient(115deg,transparent 0 12%,rgba(75,255,105,.08) 12.2% 12.6%,transparent 12.8% 100%),
+    repeating-linear-gradient(135deg,transparent 0 46px,rgba(116,255,132,.025) 47px 48px);
+}
+.app:before{content:"PLAY HARD  •  HAVE FUN  •  GOOD VIBES";color:rgba(114,255,137,.30)}
+.app:after{content:"DINK  •  ROTATE  •  REPEAT";color:rgba(211,255,18,.25)}
+header,.session,nav,.courtCard,.previous,.nextMatch,.preview,.tablewrap,.viewerCard,.viewerLock{background-color:rgba(5,22,24,.88)}
+.courtsGrid .courtPlayer{grid-template-columns:minmax(0,1fr) 30px!important}
+.courtsGrid .courtPlayer b{font-size:14px!important;padding-right:3px}
+.courtsGrid .replaceOne{width:30px!important;min-width:30px!important;max-width:30px!important;height:28px!important;min-height:28px!important;padding:0!important;font-size:15px!important;border-radius:7px!important;display:grid!important;place-items:center!important}
+.courtsGrid .team>button[data-win]{background:linear-gradient(180deg,#249fff,#0874d4)!important;border:1px solid #54b7ff!important;color:#fff!important}
+@media(max-width:700px){
+ body::before{background:linear-gradient(rgba(2,11,15,.89),rgba(2,11,15,.94)),url('./icons/picklebeer-logo.png') right -95px top 110px/260px auto no-repeat,radial-gradient(circle at 10% 18%,rgba(68,255,101,.25),transparent 30%),linear-gradient(135deg,#07301e,#020b0f 70%)}
+ .courtsGrid .courtPlayer b{font-size:13px!important}
+ .app:before,.app:after{display:none}
+}
+
+/* V10.12 — courts dashboard: In Play + Next Match side-by-side */
+.courtsDashboard{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.85fr);gap:14px;align-items:start;margin-top:10px}
+.inPlayPanel,.matchSidePanel{min-width:0}
+.sectionLabel{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 8px}
+.sectionLabel b{font-size:12px;letter-spacing:.14em;color:#72f59a}.sectionLabel small{font-size:9px;color:#78919b;text-align:right}
+.matchSidePanel .nextMatch{margin-top:0;height:auto}
+.previousBelowNext{margin-top:12px}.previousBelowNext .previous{margin-top:0}
+.courtSwapWinner{width:100%;margin-top:9px;min-height:34px;padding:7px 8px;border-radius:9px;background:linear-gradient(180deg,#193b56,#102b3f);border:1px solid #2f86bd;color:#dff5ff;font-size:10px;font-weight:900}
+.courtSwapWinner:disabled{opacity:.38;cursor:not-allowed}
+.courtSwapHint{display:block;text-align:center;font-size:8px;color:#6f8c99;margin-top:4px}
+#nextMatchCourts{display:none!important}
+@media(max-width:780px){.courtsDashboard{grid-template-columns:1fr}.matchSidePanel{margin-top:4px}.sectionLabel{align-items:center}.courtsGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.courtsGrid{grid-template-columns:1fr}.courtsDashboard{gap:10px}.courtSwapWinner{min-height:32px;font-size:9px}}
+
+/* PickleQueue Mobile App Edition v11 */
+.installApp{margin-left:auto;background:linear-gradient(180deg,#caff00,#84d900);color:#061007;border:1px solid #dfff69;border-radius:12px;padding:9px 12px;font-weight:900;white-space:nowrap;box-shadow:0 6px 18px rgba(140,255,0,.16)}
+.installApp.hidden{display:none!important}
+@media (display-mode:standalone){.installApp{display:none!important}body{overscroll-behavior-y:none}.app{padding-top:max(10px,env(safe-area-inset-top));padding-bottom:max(14px,env(safe-area-inset-bottom))}}
+@media(max-width:700px){header{gap:8px}.picklebeerLogo{width:58px;height:58px}.brand h1{font-size:25px}.clubName{font-size:10px}.clubTagline{font-size:7px}.installApp{font-size:10px;padding:7px 8px;border-radius:9px}.gear{display:none}.app{padding-left:max(10px,env(safe-area-inset-left));padding-right:max(10px,env(safe-area-inset-right))}nav{position:sticky;bottom:max(6px,env(safe-area-inset-bottom));z-index:25;backdrop-filter:blur(14px);box-shadow:0 10px 30px rgba(0,0,0,.35)}button,input{touch-action:manipulation}.courtPlayer b{font-size:14px}.replaceOne{width:27px!important;min-width:27px!important;padding:0!important}}
+
+/* V11.1 — reusable club rosters */
+.clubRoster{margin:10px 0 14px;padding:13px;background:linear-gradient(145deg,#0c1d27,#091821);border:1px solid var(--line);border-radius:18px}.clubRosterHead{display:flex;justify-content:space-between;align-items:center;gap:10px}.clubRosterHead h3{margin:0;font-size:16px}.clubRosterHead small{display:block;margin-top:3px;font-size:10px}.clubRosterHead button{min-height:38px;padding:7px 11px}.clubEmpty{padding:10px 2px 2px}.clubSelectRow{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:7px;margin-top:11px}.clubSelectRow select,.clubMemberForm input{width:100%;min-width:0;min-height:44px;border-radius:11px;padding:9px 11px;background:#0d202b;color:#fff;border:1px solid var(--line);font:inherit;font-size:16px}.clubIconBtn{min-height:44px;padding:6px;background:#2b1820;color:#ffadb4;border:1px solid #69333c}.clubMemberForm{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;margin-top:8px}.clubMemberForm button{min-height:44px}.clubQuickActions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}.clubQuickActions button{min-height:40px;font-size:11px}.clubMembers{margin-top:9px;max-height:260px;overflow:auto}.clubMember{display:flex;align-items:center;gap:8px;border-top:1px solid #203843;padding:8px 1px}.clubMember label{display:flex;align-items:center;gap:9px;flex:1;min-width:0;cursor:pointer}.clubMember input[type=checkbox]{width:20px;height:20px;accent-color:#55f277}.clubMember span{min-width:0}.clubMember b,.clubMember small{display:block}.clubMember b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.clubMember small{font-size:9px}.clubRemove{background:transparent;color:#9fb0b9;min-height:34px;padding:4px 6px;font-size:10px}@media(max-width:420px){.clubMemberForm{grid-template-columns:1fr}.clubMemberForm button{width:100%}.clubQuickActions{grid-template-columns:1fr}.clubRosterHead{align-items:flex-start}}
+
+.signature{display:block;margin-top:4px;color:#baff45;font-size:12px;font-weight:700;font-style:italic;letter-spacing:.5px;opacity:.95}
+
+/* V11.3 — Saved Clubs navigation directory */
+nav{grid-template-columns:repeat(5,1fr)}
+.clubDirectory{margin:10px 0 14px;padding:14px;background:linear-gradient(145deg,#0c1d27,#091821);border:1px solid var(--line);border-radius:18px}
+.clubDirectoryLabel{display:block;margin-bottom:6px;color:#9fb0b9;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+#clubDirectorySelect{width:100%;min-height:46px;border-radius:11px;padding:9px 11px;background:#0d202b;color:#fff;border:1px solid var(--line);font:inherit;font-size:16px}
+.clubDropdownToggle{width:100%;margin-top:10px;min-height:44px;display:flex;align-items:center;justify-content:space-between;text-align:left;background:#102a35;border:1px solid #294652;color:#dff8e7;border-radius:11px;padding:9px 12px}
+.clubDirectoryMembers{margin-top:7px;border:1px solid #203843;border-radius:12px;overflow:hidden}
+.clubDirectoryMembers.hidden{display:none!important}
+.clubDirectoryMember{display:flex;align-items:center;gap:10px;padding:11px 12px;border-top:1px solid #203843}
+.clubDirectoryMember:first-child{border-top:0}.clubDirectoryMember .memberNo{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#143527;color:#baff45;font-size:10px;font-weight:900;flex:0 0 auto}.clubDirectoryMember b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.clubDirectoryMembers .clubEmpty{padding:12px}
+@media(max-width:520px){nav .tab{font-size:14px;padding-left:3px;padding-right:3px}nav .tab span{font-size:8px}}
+
+/* v11.4 Welcome Homepage */
+.welcomeHome{min-height:100vh;padding:28px 18px 36px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 85% 10%,rgba(70,255,171,.18),transparent 28%),radial-gradient(circle at 10% 75%,rgba(0,191,255,.12),transparent 30%),#07131b;color:#fff}
+.welcomeShell{width:min(980px,100%);margin:auto}.welcomeTop{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:42px}.welcomeBrand{display:flex;align-items:center;gap:12px}.welcomeBrand img{width:58px;height:58px;object-fit:contain;border-radius:16px}.welcomeBrand b{display:block;font-size:1.25rem}.welcomeBrand span{display:block;color:#83f5bc;font-size:.75rem;letter-spacing:.12em;margin-top:3px}.welcomePill{border:1px solid rgba(255,255,255,.16);padding:9px 13px;border-radius:999px;color:#b8c7d1;font-size:.78rem}.welcomeHero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}.welcomeCopy .eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:rgba(70,255,171,.11);color:#7ff5b7;font-weight:800;font-size:.76rem;letter-spacing:.08em}.welcomeCopy h1{font-size:clamp(2.7rem,8vw,5.4rem);line-height:.92;margin:16px 0 18px;letter-spacing:-.06em}.welcomeCopy h1 span{color:#58eda3}.welcomeCopy p{max-width:620px;color:#aebdc6;font-size:1.03rem;line-height:1.65}.welcomeActions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.welcomeActions button{border:0;border-radius:14px;padding:15px 20px;font-weight:900;font-size:.96rem;cursor:pointer}.enterQueue{background:#58eda3;color:#07131b;box-shadow:0 10px 35px rgba(88,237,163,.22)}.learnBtn{background:#10232d;color:#e8f3f7;border:1px solid rgba(255,255,255,.09)!important}.welcomeCard{background:linear-gradient(160deg,#102630,#0b1b23);border:1px solid rgba(255,255,255,.09);border-radius:26px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.32)}.courtVisual{height:230px;border:2px solid rgba(88,237,163,.6);border-radius:18px;position:relative;background:linear-gradient(90deg,transparent 49.6%,rgba(255,255,255,.4) 50%,transparent 50.4%),linear-gradient(0deg,transparent 49.6%,rgba(255,255,255,.18) 50%,transparent 50.4%),rgba(88,237,163,.06);display:flex;align-items:center;justify-content:center}.courtVisual:before{content:'PICKLEQUEUE';font-weight:1000;letter-spacing:.16em;color:rgba(255,255,255,.16);transform:rotate(-8deg)}.ballDot{position:absolute;width:42px;height:42px;border-radius:50%;background:#d9ff46;right:18%;top:20%;box-shadow:0 0 30px rgba(217,255,70,.3)}.welcomeStats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.welcomeStats div{background:#07171e;border-radius:14px;padding:13px;text-align:center}.welcomeStats b{display:block;color:#fff;font-size:1rem}.welcomeStats small{color:#78909d;font-size:.68rem}.featureStrip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}.featureStrip article{padding:17px;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07)}.featureStrip b{display:block;margin-bottom:5px}.featureStrip small{color:#8298a4;line-height:1.45}.homeSignature{text-align:center;color:#58707d;margin-top:30px;font-size:.74rem}.app.homeHidden{display:none!important}
+@media(max-width:720px){.welcomeHome{align-items:flex-start;padding-top:20px}.welcomeTop{margin-bottom:28px}.welcomePill{display:none}.welcomeHero{grid-template-columns:1fr}.welcomeCopy h1{font-size:3.5rem}.welcomeCard{margin-top:6px}.courtVisual{height:170px}.featureStrip{grid-template-columns:1fr}.welcomeActions button{flex:1}.welcomeStats small{font-size:.61rem}}
+
+
+/* v11.5 Picklebeer community homepage */
+.welcomeBrand img{width:96px;height:96px;border-radius:22px;filter:drop-shadow(0 10px 25px rgba(88,237,163,.22));animation:logoFloat 4s ease-in-out infinite}
+.welcomeBrand b{font-size:1.55rem}.welcomeBrand span{font-size:.82rem}
+.communityCard{padding:12px;overflow:hidden}.communityPhoto{height:310px;border-radius:20px;overflow:hidden;position:relative;background:#08151c;isolation:isolate}.communityPhoto img{width:100%;height:100%;object-fit:cover;object-position:center 44%;display:block;transform:scale(1.035);animation:communityKenBurns 12s ease-in-out infinite alternate}.communityPhoto:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(2,10,14,.84) 100%);pointer-events:none}.photoGlow{position:absolute;width:150px;height:150px;border-radius:50%;right:-25px;top:-35px;background:rgba(88,237,163,.16);filter:blur(28px);animation:glowPulse 3.4s ease-in-out infinite;z-index:1}.photoCaption{position:absolute;left:18px;right:18px;bottom:15px;z-index:2}.photoCaption b{display:block;font-size:1.4rem;letter-spacing:.1em;color:#fff;text-shadow:0 3px 14px #000}.photoCaption small{display:block;margin-top:4px;color:#9dffc9;font-weight:800;letter-spacing:.06em}.communityCard:hover .communityPhoto img{transform:scale(1.08)}
+@keyframes communityKenBurns{0%{transform:scale(1.035) translate3d(0,0,0)}100%{transform:scale(1.09) translate3d(-1.2%,-1%,0)}}
+@keyframes logoFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-6px) rotate(1deg)}}
+@keyframes glowPulse{0%,100%{opacity:.55;transform:scale(.9)}50%{opacity:1;transform:scale(1.15)}}
+@media(max-width:720px){.welcomeBrand img{width:78px;height:78px}.welcomeBrand b{font-size:1.3rem}.communityPhoto{height:245px}.photoCaption b{font-size:1.15rem}.photoCaption small{font-size:.62rem}}
+@media(prefers-reduced-motion:reduce){.communityPhoto img,.welcomeBrand img,.photoGlow{animation:none!important}}
