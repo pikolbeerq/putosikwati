@@ -328,3 +328,29 @@ nav{grid-template-columns:repeat(6,1fr)}
 
 /* v11.23 selectable matching modes */
 .matchingModes{grid-column:1/-1;background:#0b1d27;border:1px solid #244452;border-radius:18px;padding:16px;display:grid;gap:10px;margin-bottom:14px}.matchingTitle{display:flex;justify-content:space-between;gap:12px;align-items:end;margin-bottom:2px}.matchingTitle>b{font-size:18px}.matchingTitle small{opacity:.68;text-align:right}.matchingMode{width:100%;display:flex;align-items:flex-start;gap:11px;text-align:left;padding:14px;border-radius:14px;border:1px solid #294957;background:#102630;color:#f1fbff}.matchingMode.active{border-color:#35dc80;background:#0e3328;box-shadow:0 0 0 1px rgba(53,220,128,.15) inset}.modeCheck{width:20px;flex:0 0 20px;font-size:20px;line-height:1.1;color:#44ed8c;font-weight:1000}.modeText{display:grid;gap:4px}.modeText>b{font-size:16px}.modeText small{font-size:12px;line-height:1.35;opacity:.72}.modeText em{font-style:normal;font-size:10px;border-radius:999px;padding:3px 7px;margin-left:5px;background:#d8ffea;color:#08753b;vertical-align:2px}.matchingMode:nth-of-type(3) .modeText em{background:#ead8ff;color:#7622c7}@media(max-width:600px){.matchingTitle{display:grid}.matchingTitle small{text-align:left}.matchingMode{padding:12px}}
+
+/* v11.25 Best Player logo + label grouped at lower-left */
+.bestPlayerGalleryItem .galleryBestEmblem{
+  left:12px!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:116px!important;
+  transform:none!important;
+  width:74px!important;
+  max-width:22%!important;
+  max-height:74px!important;
+  object-fit:contain!important;
+}
+.bestPlayerGalleryItem:after{
+  left:12px!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:82px!important;
+  transform:none!important;
+  padding:5px 10px!important;
+  font-size:clamp(9px,2.2vw,12px)!important;
+}
+@media(max-width:560px){
+  .bestPlayerGalleryItem .galleryBestEmblem{left:10px!important;bottom:108px!important;width:62px!important}
+  .bestPlayerGalleryItem:after{left:10px!important;bottom:78px!important;padding:4px 8px!important}
+}
